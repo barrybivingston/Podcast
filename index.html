@@ -26,31 +26,67 @@
       font-size: 1.1rem;
       color: #555;
     }
-    .hero {
-      width: 100%;
-      max-height: 500px;
-      overflow: hidden;
-    }
     .hero img {
       width: 100%;
+      display: block;
+      max-height: 600px;
       object-fit: cover;
     }
     main {
       max-width: 800px;
       margin: 2rem auto;
       padding: 0 1rem;
+    }
+    .about {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+    .listen-buttons {
       text-align: center;
+      margin: 2rem 0;
     }
-    iframe {
-      width: 100%;
-      height: 160px;
-      border: none;
+    .listen-buttons a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
     }
-    .footer-image {
-      margin-top: 2rem;
-      width: 100%;
-      max-height: 400px;
-      object-fit: cover;
+    .archive {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .archive h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .archive ul {
+      list-style: none;
+      padding: 0;
+    }
+    .archive li {
+      margin: 0.5rem 0;
+    }
+    .archive a {
+      color: #1a0dab;
+      text-decoration: none;
+    }
+    .x-link {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .x-link a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
     }
     footer {
       text-align: center;
@@ -63,18 +99,42 @@
 <body>
   <header>
     <h1>The Market Master Podcast</h1>
-    <p>Timeless lessons from market history for today’s traders and investors.</p>
+    <p>Timeless lessons from market history for today’s traders and investors</p>
   </header>
   <div class="hero">
-    <img src="ny.jpeg" alt="New York skyline" />
+    <img src="ny.jpeg" alt="NYC Skyline">
   </div>
   <main>
-    <iframe 
-      title="Market Master Podbean Player"
-      src="https://www.podbean.com/player-v2/?i=pbblog3485206&from=embed&share=1&download=1&skin=1&btn-skin=7&size=160"
-      allowtransparency="true"
-    ></iframe>
-    <img src="nyse.png" alt="New York Stock Exchange" class="footer-image" />
+    <section class="about">
+      <h2>About</h2>
+      <p>The Market Master Podcast will take you on a journey through the history of the US stock market over the past 150 years. Studying the past is the best way to see into the future and to prepare for what’s to come in the market. It’s also the best way to practice trading/investing outside of market hours.</p>
+      <p>Together, we will dig up the past of the stock market to learn how it truly works. We will study all the great bull and bear markets going back to the 1870s, complete with macroeconomic analysis, market narratives, and charts of individual stocks and their stories in order to build our knowledge base to help us profit from current and future markets. We will study the craziest stocks of all time, the biggest short squeezes, the most obvious easy trades in history, what actually makes stocks go up, how the market has changed and how it has stayed the same over the past 150 years, and so much more.</p>
+    </section>
+    <div class="listen-buttons">
+      <a href="#">Spotify</a>
+      <a href="#">Apple Podcasts</a>
+      <a href="#">Podbean</a>
+    </div>
+    <section class="archive">
+      <h2>Stock Writeups by Decade</h2>
+      <ul>
+        <li><a href="#">1870s–1880s</a></li>
+        <li><a href="#">1890s</a></li>
+        <li><a href="#">1900s</a></li>
+        <li><a href="#">1910s</a></li>
+        <li><a href="#">1920s</a></li>
+        <li><a href="#">1930s</a></li>
+        <li><a href="#">1940s</a></li>
+        <li><a href="#">1950s</a></li>
+        <li><a href="#">1960s</a></li>
+        <li><a href="#">1970s</a></li>
+        <li><a href="#">1980s</a></li>
+        <li><a href="#">1990s</a></li>
+      </ul>
+    </section>
+    <div class="x-link">
+      <p>Follow on <a href="https://x.com/lesse_jivermore" target="_blank">@lesse_jivermore</a></p>
+    </div>
   </main>
   <footer>
     &copy; 2025 The Market Master Podcast. All rights reserved.
