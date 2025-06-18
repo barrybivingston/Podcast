@@ -1,92 +1,51 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>The Market Master Podcast</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background-image: url('assets/background.jpg');
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
-      color: #000;
-    }
-    .container {
-      background-color: rgba(255, 255, 255, 0.85);
-      margin: 2em auto;
-      padding: 2em;
-      max-width: 800px;
-      border-radius: 8px;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5em;
-    }
-    h2 {
-      margin-top: 1.5em;
-    }
-    .platform-icons img {
-      height: 40px;
-      margin: 0 15px;
-      vertical-align: middle;
-    }
-    .decades {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 4em;
-      margin-top: 2em;
-    }
-    .decades ul {
-      list-style: none;
-      padding: 0;
-    }
-    .decades li {
-      margin: 0.3em 0;
-    }
-    footer {
-      margin-top: 2em;
-      font-size: 0.9em;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>The Market Master Podcast</h1>
-    <p>Timeless lessons from market history for today’s traders and investors</p>
-    <h2>About</h2>
-    <p>The Market Master Podcast will take you on a journey through the history of the US stock market over the past 150 years. Studying the past is the best way to see into the future and to prepare for what’s to come in the market. It’s also the best way to practice trading/investing outside of market hours.</p>
-    <p>Together, we will dig up the past of the stock market to learn how it truly works. We will study all the great bull and bear markets going back to the 1870s, complete with macroeconomic analysis, market narratives, and charts of individual stocks and their stories in order to build our knowledge base to help us profit from current and future markets.</p>
-    <div class="platform-icons">
-      <a href="#"><img src="assets/spotify.png" alt="Spotify"></a>
-      <a href="#"><img src="assets/apple.png" alt="Apple Podcasts"></a>
-      <a href="#"><img src="assets/podbean.png" alt="Podbean"></a>
+    <header>
+      <h1>The Market Master Podcast</h1>
+      <p class="tagline">Timeless lessons from market history for today’s traders and investors</p>
+    </header>
+
+    <section class="about-section">
+      <h2>About</h2>
+      <div class="text-box">The Market Master Podcast will take you on a journey through the history of the US stock market over the past 150 years. Studying the past is the best way to see into the future and to prepare for what’s to come in the market. It’s also the best way to practice trading/investing outside of market hours.</div>
+      <div class="text-box">Together, we will dig up the past of the stock market to learn how it truly works. We will study all the great bull and bear markets going back to the 1870s, complete with macroeconomic analysis, market narratives, and charts of individual stocks and their stories in order to build our knowledge base to help us profit from current and future markets.</div>
+    </section>
+
+    <div class="platform-links">
+      <a href="#"><img src="spotify.png" alt="Spotify"></a>
+      <a href="#"><img src="apple.png" alt="Apple Podcasts"></a>
+      <a href="#"><img src="podbean.png" alt="Podbean"></a>
+      <a href="https://x.com/lesse_jivermore"><img src="x.png" alt="X"></a>
     </div>
-    <h2>Stock Writeups by Decade</h2>
-    <div class="decades">
-      <ul>
-        <li><a href="#">1870s–1880s</a></li>
-        <li><a href="#">1890s</a></li>
-        <li><a href="#">1900s</a></li>
-        <li><a href="#">1910s</a></li>
-        <li><a href="#">1920s</a></li>
-        <li><a href="#">1930s</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">1940s</a></li>
-        <li><a href="#">1950s</a></li>
-        <li><a href="#">1960s</a></li>
-        <li><a href="#">1970s</a></li>
-        <li><a href="#">1980s</a></li>
-        <li><a href="#">1990s</a></li>
-      </ul>
-    </div>
+
+    <section class="archive">
+      <h2>Stock Writeups by Decade</h2>
+      <div class="decade-grid">
+        <div><a href="#">1870s–1880s</a></div>
+        <div><a href="#">1890s</a></div>
+        <div><a href="#">1900s</a></div>
+        <div><a href="#">1910s</a></div>
+        <div><a href="#">1920s</a></div>
+        <div><a href="#">1930s</a></div>
+        <div><a href="#">1940s</a></div>
+        <div><a href="#">1950s</a></div>
+        <div><a href="#">1960s</a></div>
+        <div><a href="#">1970s</a></div>
+        <div><a href="#">1980s</a></div>
+        <div><a href="#">1990s</a></div>
+      </div>
+    </section>
+
     <footer>
-      © 2025 The Market Master Podcast. All rights reserved.
+      <p>© 2025 The Market Master Podcast. All rights reserved.</p>
     </footer>
   </div>
 </body>
